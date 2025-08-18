@@ -1,1 +1,115 @@
 # UTN-TUPaDProgramacion1
+
+#Ejercicio 1
+
+print("Hola Mundo")
+
+
+#Ejercicio 2
+nombre = input("Ingrese su nombre: ")
+
+print(f"Hola {nombre}")
+
+
+#Ejercicio 3
+nombre = input("Ingrese su nombre: ")
+apellido = input("Ingrese su apellido: ")
+edad = input("Ingrese su edad: ")
+lugar_de_residencia = input("Igrese su lugar de residencia: ")
+
+print(f"Soy {nombre} {apellido}, tengo {edad} años y vivo en {lugar_de_residencia}")
+
+
+#Ejercicio 4
+import math
+
+radio_circulo = float(input("Ingrese el radio del círculo: "))
+
+area_circulo = math.pi * (radio_circulo)**2
+perimetro_circulo = 2 * math.pi * radio_circulo
+
+print(f"Área del círculo: {area_circulo} . Perímetro del círculo: {perimetro_circulo}")
+
+
+#Ejercicio 5
+cantidad_segundos = float(input("Ingrese la cantidad de segundos: "))
+
+cantidad_horas = round(cantidad_segundos / 3600, 2)
+
+print(f"Tantos {cantidad_segundos} equivalen a {cantidad_horas} horas.")
+
+
+#Ejercicio 6
+numero_a_multiplicar = int(input("Ingrese un número: "))
+
+numero_por_0 = numero_a_multiplicar * 0
+numero_por_1 = numero_a_multiplicar * 1
+numero_por_2 = numero_a_multiplicar * 2
+numero_por_3 = numero_a_multiplicar * 3
+numero_por_4 = numero_a_multiplicar * 4
+numero_por_5 = numero_a_multiplicar * 5
+numero_por_6 = numero_a_multiplicar * 6
+numero_por_7 = numero_a_multiplicar * 7
+numero_por_8 = numero_a_multiplicar * 8
+numero_por_9 = numero_a_multiplicar * 9
+
+print(f"""
+  {numero_a_multiplicar} x 0 = {numero_por_0}
+  {numero_a_multiplicar} x 1 = {numero_por_1}
+  {numero_a_multiplicar} x 2 = {numero_por_2}
+  {numero_a_multiplicar} x 3 = {numero_por_3}
+  {numero_a_multiplicar} x 4 = {numero_por_4}
+  {numero_a_multiplicar} x 5 = {numero_por_5}
+  {numero_a_multiplicar} x 6 = {numero_por_6}
+  {numero_a_multiplicar} x 7 = {numero_por_7}
+  {numero_a_multiplicar} x 8 = {numero_por_8}
+  {numero_a_multiplicar} x 9 = {numero_por_9}
+      """)
+
+
+#Ejercicio 7
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+
+suma = num1 + num2
+
+division = round(num1 / num2, 2)
+
+multiplic = num1 * num2
+
+resta = num1 - num2
+
+print(f"""
+  Resultado de la suma: {suma}
+  Resultado de la división: {division}
+  Resultado de la multiplicación: {multiplic}
+  Resultado de la resta: {resta}
+      """)
+
+
+#Ejercicio 8
+peso = float(input("Ingrese su peso en kg: "))
+altura = float(input("Ingrese su altura en mts: "))
+
+imc = round(peso / altura**2, 2)
+
+print(f"Su indice de masa corporal es de: {imc}")
+
+
+#Ejercicio 9
+temp_celsius = float(input("Ingrese na temperatura en °C: "))
+
+temp_fahrenheit = round((9/5)*temp_celsius+32, 2)
+
+print(f"{temp_celsius} °C equivalen a {temp_fahrenheit} °F.")
+
+
+#Ejercicio 10
+num1 = float(input("Ingrese el primer número: "))
+num2 = float(input("Ingrese el segundo número: "))
+num3 = float(input("Ingrese el tercer número: "))
+
+suma = num1 + num2 + num3
+promedio = round(suma/3, 2)
+
+print(f"El promedio es {promedio}.")
