@@ -1,0 +1,134 @@
+#EJERCICIO 1
+#Solicite la edad del usuario. Si el usuario es mayor de 18 años, poner en pantalla: “Es mayor de edad”.
+
+edad = int(input("Cual es tu edad?: "))
+
+if edad >= 18:
+    print("Es mayor de edad")
+
+    
+#EJERCICIO 2
+#Solicite su nota al usuario. Si la nota es mayor o igual a 6, deberá mostrar “Aprobado”; en caso contrario “Desaprobado”.
+
+nota = float(input("Cual es tu nota?: "))
+
+if nota >= 6:
+    print("Aprobado")
+else:
+    print("Desaprobado")
+
+    
+#EJERCICIO 3
+#Ingresar solo números pares. Si ingresa un número par, imprimir "Ha ingresado un número par";
+#en caso contrario, "Por favor, ingrese un número par". 
+
+numero = int(input("Ingrese un numero: "))
+
+if numero % 2 == 0:
+    print("Ha ingresado un numero par")
+else:
+    print("Por favor, ingrese un numero par")
+
+
+#EJERCICIO 4
+#Solicite al usuario su edad e imprima por pantalla a que categoria pertenece
+
+edad = int(input("Cual es tu edad?: "))
+
+if edad < 12:
+    print("Niño")
+elif edad >= 12 and edad < 18:
+    print("Adolescente")
+elif edad >= 18 and edad < 30:
+    print("Adulto/a joven")
+else:
+    print("Adulto/a mayor")
+
+
+#EJERCICIO 5
+#Escribir un programa que permita una contraseña entre 8 y 14 caracteres. Investigar funcion len
+
+contraseña = input("Ingrese una contraseña: ")
+
+if 8 <= len(contraseña) <= 14:
+    print("Contraseña ingresada correctamente")
+else:
+    print ("Por favor, ingrese una contraseña entre 8 y 14 caracteres")
+
+
+#EJERCICIO 7
+#Solicitar al usuario una frase o palabra. Si termina en vocal agregar un signo de exclamacion al final. Caso contrario, dejarlo asi
+
+frase = input("Ingrese una frase o palabra: ")
+
+if frase[-1].lower() in "aeiou": 
+    frase = frase + "!"
+print("Resultado: ", frase)
+
+#frase[-1]: obtengo ultimo caracter    
+#.lover(): lo paso a minuscula sin importar si lo escribe en mayusc
+#in "aeiou": revisa si es una vocal
+
+
+#EJERCICIO 8
+#Solicita al usuario su nombre y luego un numero (1,2 o 3). 
+# Si el numero es 1: nombre en mayuscula - Si es 2: en minuscula - Si es 3: primera letra en mayuscula
+
+nombre = input("Ingrese su nombre: ")
+num = int(input("Ingrese 1, 2 o 3: "))
+
+if num == 1:
+    print("Nombre: ", nombre.upper())                 #convierte todo a mayusculas
+elif num == 2:
+    print("Nombre: ", nombre.lower())                 #convierte todo a minusculas
+elif num == 3:
+    print("Nombre: ", nombre.title())                #convierte la primer letra de cada palabra en mayuscula
+else:
+    print("Opción incorrecta")
+
+
+#EJERCICIO 9
+#Solicita al usuario la magnitud de un terremoto y clasificarlo segun la escala de Richter
+
+magnitud = float(input("Ingrese la magnitud del terremoto: "))
+
+if magnitud < 3:
+    print ("Muy leve (imperceptible)")
+elif 3 <= magnitud < 4:
+        print ("Leve (ligeramente perceptible)")
+elif 4 <= magnitud < 5:
+        print ("Moderado (sentido por personas, pero generalmente no causa daños)")
+elif 5 <= magnitud < 6:
+        print ("Fuerte (puede causar daños en estructuras debiles)")
+elif 6 <= magnitud < 7:
+        print ("Muy fuerte (puede causar daños significativos)")
+else:
+     print("Extremo (puede causar daños graves)")
+
+
+#EJERCICIO 10
+#Preguntar al usuario en que hemisferio esta (norte o sur) y que mes y dia es. Con eso determinar la estacion del año
+
+hemisferio = input ("Ingrese hemisferio (Norte/Sur").upper()
+mes = int(input("Ingrese el mes (1-12: )"))
+dia = int(input("Ingrese el dia: "))
+
+if (mes == 12 and dia >= 21) or (1 <= mes <= 2) or (mes == 3 and dia <=20): 
+     estnorte = "Invierno"
+     estsur = "Verano" 
+elif (mes == 3 and dia >= 21) or (4 <= mes <= 5) or (mes == 6 and dia <=20):
+     estnorte = "Primavera"
+     estsur = "Otoño"
+elif (mes == 6 and dia >= 21) or (7 <= mes <= 8) or (mes == 9 and dia <=20):
+     estnorte = "Verano"
+     estsur = "Invierno"
+else:
+     estnorte = "Otoño"
+     estsur = "Primavera"
+
+if hemisferio == "NORTE":
+     print ("Estas en {estnorte}.")
+elif hemisferio == "SUR":
+     print("Estas en {estsur}.")
+else:
+     print("Hemisferio incorrecto. Ingresa NORTE O SUR")
