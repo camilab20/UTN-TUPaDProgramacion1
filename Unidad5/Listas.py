@@ -128,6 +128,8 @@ for j in range(3):
     prom = sum(materia) / len(materia)
     print(f"Promedio materia {j+1}: {prom}")
 
+
+#Ejercicio 10:
 ventas = [
     [10, 20, 30, 40, 50, 60, 70],
     [5, 15, 25, 35, 45, 55, 65],
@@ -135,9 +137,6 @@ ventas = [
     [12, 22, 32, 42, 52, 62, 72]
 ]
 
-
-#Ejercicio 10:
-#Total vendido por producto
 for i, fila in enumerate(ventas):
     total = sum(fila)
     print(f"Producto {i+1}: {total}")
